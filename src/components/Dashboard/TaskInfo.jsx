@@ -3,7 +3,7 @@ import React from "react";
 function TaskInfo({ bgColor }) {
   return (
     <div
-      className={`w-[25rem] snap-start bg-${bgColor}-500 hover:brightness-105 flex-shrink-0 flex flex-col gap-2 w-full p-4 pb-12 text-white rounded-xl my-4 cursor-pointer`}
+      className={`max-w-[25rem] snap-start bg-${bgColor}-500 hover:brightness-105 flex-shrink-0 flex flex-col gap-2 w-full p-4 pb-12 text-white rounded-xl my-4 cursor-pointer`}
     >
       <div className="flex items-center justify-between text-sm">
         <span className="bg-red-600 p-2 rounded-md font-semibold">High</span>
