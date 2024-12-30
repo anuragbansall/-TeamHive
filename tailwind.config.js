@@ -7,6 +7,11 @@ export default {
   theme: {
     extend: {},
   },
+  safelist: [
+    {
+      pattern: /^bg-(.+)-(\d{1,3})$/,
+    },
+  ],
   plugins: [],
 }
 

@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+*::-webkit-scrollbar{
+  display: none;
+}
+
 body {
   background-color: #111111;
+  color: #ffffff;
 }
 
 .login-form-input {
-  @apply border-2 w-[22rem] max-w-full border-emerald-800 rounded-full px-6 py-2 text-xl text-white bg-transparent;
+  @apply border-2 w-[22rem] max-w-full border-emerald-800 rounded-full px-6 py-2 text-xl text-white bg-transparent outline-none focus:border-slate-400;
+}
+
+.log-out{
+  @apply bg-red-800 hover:bg-red-900 duration-100 px-6 py-2 rounded-md font-semibold
 }
