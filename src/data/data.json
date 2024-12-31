@@ -1,172 +1,215 @@
 {
     "employees": [
-        {
-            "id": 1,
-            "name": "Employee 1",
-            "email": "employee1@example.com",
-            "password": "123",
-            "tasks": [
-                {
-                    "isActive": true,
-                    "isNewTask": true,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 1",
-                    "description": "Complete the project report.",
-                    "date": "2024-01-01",
-                    "category": "Work"
-                },
-                {
-                    "isActive": false,
-                    "isNewTask": false,
-                    "isCompleted": true,
-                    "isFailed": false,
-                    "title": "Task 2",
-                    "description": "Submit timesheet.",
-                    "date": "2023-12-28",
-                    "category": "Admin"
-                },
-                {
-                    "isActive": false,
-                    "isNewTask": false,
-                    "isCompleted": false,
-                    "isFailed": true,
-                    "title": "Task 3",
-                    "description": "Prepare presentation for client meeting.",
-                    "date": "2023-12-30",
-                    "category": "Work"
-                }
-            ]
-        },
-        {
-            "id": 2,
-            "name": "Employee 2",
-            "email": "employee2@example.com",
-            "password": "123",
-            "tasks": [
-                {
-                    "isActive": true,
-                    "isNewTask": false,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 1",
-                    "description": "Schedule team meeting.",
-                    "date": "2023-12-31",
-                    "category": "Work"
-                },
-                {
-                    "isActive": false,
-                    "isNewTask": true,
-                    "isCompleted": false,
-                    "isFailed": true,
-                    "title": "Task 2",
-                    "description": "Update project roadmap.",
-                    "date": "2024-01-02",
-                    "category": "Planning"
-                },
-                {
-                    "isActive": true,
-                    "isNewTask": false,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 3",
-                    "description": "Organize team lunch.",
-                    "date": "2024-01-03",
-                    "category": "Social"
-                }
-            ]
-        },
-        {
-            "id": 3,
-            "name": "Employee 3",
-            "email": "employee3@example.com",
-            "password": "123",
-            "tasks": [
-                {
-                    "isActive": false,
-                    "isNewTask": true,
-                    "isCompleted": true,
-                    "isFailed": false,
-                    "title": "Task 1",
-                    "description": "Review code submissions.",
-                    "date": "2024-01-04",
-                    "category": "Code Review"
-                },
-                {
-                    "isActive": true,
-                    "isNewTask": false,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 2",
-                    "description": "Create API documentation.",
-                    "date": "2024-01-05",
-                    "category": "Documentation"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "name": "Employee 4",
-            "email": "employee4@example.com",
-            "password": "123",
-            "tasks": [
-                {
-                    "isActive": true,
-                    "isNewTask": true,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 1",
-                    "description": "Set up test environment.",
-                    "date": "2024-01-06",
-                    "category": "Testing"
-                },
-                {
-                    "isActive": false,
-                    "isNewTask": false,
-                    "isCompleted": true,
-                    "isFailed": false,
-                    "title": "Task 2",
-                    "description": "Analyze performance metrics.",
-                    "date": "2024-01-07",
-                    "category": "Analytics"
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Employee 5",
-            "email": "employee5@example.com",
-            "password": "123",
-            "tasks": [
-                {
-                    "isActive": false,
-                    "isNewTask": true,
-                    "isCompleted": false,
-                    "isFailed": true,
-                    "title": "Task 1",
-                    "description": "Fix bugs in module X.",
-                    "date": "2024-01-08",
-                    "category": "Bug Fix"
-                },
-                {
-                    "isActive": true,
-                    "isNewTask": false,
-                    "isCompleted": false,
-                    "isFailed": false,
-                    "title": "Task 2",
-                    "description": "Research on new library.",
-                    "date": "2024-01-09",
-                    "category": "Research"
-                }
-            ]
+      {
+        "id": 1,
+        "name": "Employee 12",
+        "email": "employee1@example.com",
+        "password": "123",
+        "tasks": [
+          {
+            "id": 101,
+            "isActive": true,
+            "isNewTask": true,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Complete Project Report",
+            "description": "Prepare and finalize the project report, ensuring all sections are accurate and submitted on time.",
+            "date": "2024-01-01",
+            "category": "Work"
+          },
+          {
+            "id": 102,
+            "isActive": false,
+            "isNewTask": false,
+            "isCompleted": true,
+            "isFailed": false,
+            "title": "Submit Timesheet",
+            "description": "Fill in the weekly timesheet with accurate work hours and submit it to the HR portal.",
+            "date": "2023-12-28",
+            "category": "Admin"
+          },
+          {
+            "id": 103,
+            "isActive": false,
+            "isNewTask": false,
+            "isCompleted": false,
+            "isFailed": true,
+            "title": "Prepare Client Presentation",
+            "description": "Create a detailed presentation for the upcoming client meeting, highlighting project progress and next steps.",
+            "date": "2023-12-30",
+            "category": "Work"
+          }
+        ],
+        "taskCounts": {
+          "activeCount": 1,
+          "newTaskCount": 1,
+          "completedCount": 1,
+          "failedCount": 1
         }
+      },
+      {
+        "id": 2,
+        "name": "Employee 2",
+        "email": "employee2@example.com",
+        "password": "123",
+        "tasks": [
+          {
+            "id": 201,
+            "isActive": true,
+            "isNewTask": false,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Schedule Team Meeting",
+            "description": "Coordinate with team members to find a suitable time and schedule the next team meeting on the shared calendar.",
+            "date": "2023-12-31",
+            "category": "Work"
+          },
+          {
+            "id": 202,
+            "isActive": false,
+            "isNewTask": true,
+            "isCompleted": false,
+            "isFailed": true,
+            "title": "Update Project Roadmap",
+            "description": "Revise the project roadmap based on recent updates and feedback, ensuring it aligns with current goals.",
+            "date": "2024-01-02",
+            "category": "Planning"
+          },
+          {
+            "id": 203,
+            "isActive": true,
+            "isNewTask": false,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Plan Team Lunch",
+            "description": "Organize a team lunch to improve morale and team bonding, ensuring everyone’s availability.",
+            "date": "2024-01-03",
+            "category": "Social"
+          }
+        ],
+        "taskCounts": {
+          "activeCount": 2,
+          "newTaskCount": 1,
+          "completedCount": 0,
+          "failedCount": 1
+        }
+      },
+      {
+        "id": 3,
+        "name": "Employee 3",
+        "email": "employee3@example.com",
+        "password": "123",
+        "tasks": [
+          {
+            "id": 301,
+            "isActive": false,
+            "isNewTask": true,
+            "isCompleted": true,
+            "isFailed": false,
+            "title": "Review Code Submissions",
+            "description": "Analyze recent code submissions for quality and standards, and provide constructive feedback to developers.",
+            "date": "2024-01-04",
+            "category": "Code Review"
+          },
+          {
+            "id": 302,
+            "isActive": true,
+            "isNewTask": false,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Draft API Documentation",
+            "description": "Prepare detailed and easy-to-understand API documentation to assist developers in integrating the API effectively.",
+            "date": "2024-01-05",
+            "category": "Documentation"
+          }
+        ],
+        "taskCounts": {
+          "activeCount": 1,
+          "newTaskCount": 1,
+          "completedCount": 1,
+          "failedCount": 0
+        }
+      },
+      {
+        "id": 4,
+        "name": "Employee 4",
+        "email": "employee4@example.com",
+        "password": "123",
+        "tasks": [
+          {
+            "id": 401,
+            "isActive": true,
+            "isNewTask": true,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Set Up Test Environment",
+            "description": "Configure the test environment for the upcoming project, ensuring all necessary tools and settings are in place.",
+            "date": "2024-01-06",
+            "category": "Testing"
+          },
+          {
+            "id": 402,
+            "isActive": false,
+            "isNewTask": false,
+            "isCompleted": true,
+            "isFailed": false,
+            "title": "Analyze Performance Metrics",
+            "description": "Evaluate recent performance metrics and prepare a detailed report with insights and recommendations for improvement.",
+            "date": "2024-01-07",
+            "category": "Analytics"
+          }
+        ],
+        "taskCounts": {
+          "activeCount": 1,
+          "newTaskCount": 1,
+          "completedCount": 1,
+          "failedCount": 0
+        }
+      },
+      {
+        "id": 5,
+        "name": "Employee 5",
+        "email": "employee5@example.com",
+        "password": "123",
+        "tasks": [
+          {
+            "id": 501,
+            "isActive": false,
+            "isNewTask": true,
+            "isCompleted": false,
+            "isFailed": true,
+            "title": "Fix Bugs in Module X",
+            "description": "Identify and resolve critical bugs in Module X, ensuring it meets functional and performance requirements.",
+            "date": "2024-01-08",
+            "category": "Bug Fix"
+          },
+          {
+            "id": 502,
+            "isActive": true,
+            "isNewTask": false,
+            "isCompleted": false,
+            "isFailed": false,
+            "title": "Research New Library",
+            "description": "Conduct an in-depth study of the new library's features and assess its potential for integration into the project.",
+            "date": "2024-01-09",
+            "category": "Research"
+          }
+        ],
+        "taskCounts": {
+          "activeCount": 1,
+          "newTaskCount": 1,
+          "completedCount": 0,
+          "failedCount": 1
+        }
+      }
     ],
     "admin": [
-        {
-            "id": 1,
-            "name": "Admin",
-            "email": "admin@example.com",
-            "password": "123"
-        }
+      {
+        "id": 1,
+        "name": "Admin",
+        "email": "admin@example.com",
+        "password": "123"
+      }
     ]
-}
+  }
+  
