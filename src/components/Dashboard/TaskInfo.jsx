@@ -1,6 +1,6 @@
 import React from "react";
 
-function TaskInfo({ bgColor }) {
+function TaskInfo({ bgColor="sky" }) {
   return (
     <div
       className={`max-w-[25rem] snap-start bg-${bgColor}-500 hover:brightness-105 flex-shrink-0 flex flex-col gap-2 w-full p-4 pb-12 text-white rounded-xl my-4 cursor-pointer`}

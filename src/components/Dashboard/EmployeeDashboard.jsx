@@ -3,6 +3,7 @@ import Header from "./Header";
 import Container from "../Common/Container";
 import TaskTracker from "./TaskTracker";
 import TaskInfo from "./TaskInfo";
+import TaskInfoContainer from "./TaskInfoContainer";
 
 function EmployeeDashboard() {
   return (
@@ -15,12 +16,7 @@ function EmployeeDashboard() {
           <TaskTracker bgColor="green" />
           <TaskTracker bgColor="yellow" />
         </div>
-        <div className="mt-12 w-full flex overflow-x-auto snap-x gap-4">
-          <TaskInfo bgColor="red" />
-          <TaskInfo bgColor="sky" />
-          <TaskInfo bgColor="green" />
-          <TaskInfo bgColor="yellow" />
-        </div>
+        <TaskInfoContainer />
       </Container>
     </div>
   );
