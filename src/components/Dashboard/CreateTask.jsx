@@ -1,7 +1,5 @@
 import React from "react";
 import TaskInput from "./TaskInput";
-import TaskInfo from "./TaskInfo";
-import TaskInfoContainer from "./TaskInfoContainer";
 
 function CreateTask() {
   const [task, setTask] = React.useState({
@@ -86,7 +84,6 @@ function CreateTask() {
           </button>
         </div>
       </form>
-      <TaskInfoContainer />
     </div>
   );
 }
