@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Container from "../Common/Container";
 
-function Login() {
+function Login({handleLogin}) {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -18,7 +18,7 @@ function Login() {
 
   function handleFormSubmit(e) {
     e.preventDefault();
-    console.log(email, password);
+    handleLogin(email, password);
 
     setEmail("");
     setPassword("");
@@ -39,7 +39,7 @@ function Login() {
               <input
                 className="login-form-input"
                 type="email"
-                placeholder="Enter your email"
+                placeholder="e.g. admin@example.com"
                 name="email"
                 value={email}
                 onChange={handleInputValue}
@@ -48,7 +48,7 @@ function Login() {
               <input
                 className="login-form-input"
                 type="password"
-                placeholder="Enter password"
+                placeholder="e.g. 123"
                 name="password"
                 value={password}
                 onChange={handleInputValue}
