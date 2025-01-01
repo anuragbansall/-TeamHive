@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import TaskInput from "./TaskInput";
+import { v4 as uuidv4 } from "uuid";
+import { AuthContext } from "../../context/AuthProvider";
 
 function CreateTask() {
+  const { authData, updateEmployees } = useContext(AuthContext);
+
   const [task, setTask] = React.useState({
     title: "",
     description: "",
@@ -16,8 +20,36 @@ function CreateTask() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    console.log(task);
 
+    const newTask = {
+      ...task,
+      id: uuidv4(),
+      isActive: false,
+      isNewTask: true,
+      isCompleted: false,
+      isFailded: false,
+    };
+
+    const newEmployees = authData.employees.map((employee) => {
+      if (
+        employee.name.trim().toLowerCase() ===
+        task.assignTo.trim().toLowerCase()
+      ) {
+        return {
+          ...employee,
+          tasks: [...employee.tasks, newTask],
+          taskCounts: {
+            ...employee.taskCounts,
+            newTaskCount: employee.taskCounts.newTaskCount + 1,
+          },
+        };
+      }
+      return employee;
+    });
+
+    updateEmployees(newEmployees);
+
+    // Reset the task form
     setTask({
       title: "",
       description: "",
@@ -54,7 +86,7 @@ function CreateTask() {
             handleInputChange={handleInputChange}
             task={task}
             name="assignTo"
-            placeholder="John Doe"
+            placeholder="Employee 1"
             type="text"
           />
           <TaskInput

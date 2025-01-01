@@ -5,8 +5,9 @@ function UsersInfoContainer({ usersData }) {
   return (
     <div className="mt-12 w-full">
       {/* Table Header */}
-      <div className="grid sm:grid-cols-5 place-items-center text-xl bg-zinc-700 font-semibold text-white rounded-xl p-4">
+      <div className="grid sm:grid-cols-6 place-items-center text-xl bg-zinc-700 font-semibold text-white rounded-xl p-4">
         <p className="">Name</p>
+        <p className="">Email</p>
         <p className="hidden sm:block">New Tasks</p>
         <p className="hidden sm:block">Active Tasks</p>
         <p className="hidden sm:block">Completed Tasks</p>

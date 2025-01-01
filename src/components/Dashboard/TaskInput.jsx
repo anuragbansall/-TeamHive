@@ -8,6 +8,8 @@ function TaskInput({
   placeholder,
   type = "text",
   required = true,
+  className,
+  ...rest
 }) {
   const id = useId();
   return (
@@ -19,11 +21,12 @@ function TaskInput({
         required={required}
         onChange={handleInputChange}
         value={task[name]}
-        className="create-task-input hover-effect"
+        className={`create-task-input hover-effect ${className}`}
         type={type}
         id={id}
         name={name}
         placeholder={placeholder}
+        {...rest}
       />
     </div>
   );

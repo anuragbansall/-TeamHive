@@ -14,7 +14,7 @@
             "isFailed": false,
             "title": "Complete Project Report",
             "description": "Prepare and finalize the project report, ensuring all sections are accurate and submitted on time.",
-            "date": "2024-01-01",
+            "deadline": "2024-01-01",
             "category": "Work"
           },
           {
@@ -25,7 +25,7 @@
             "isFailed": false,
             "title": "Submit Timesheet",
             "description": "Fill in the weekly timesheet with accurate work hours and submit it to the HR portal.",
-            "date": "2023-12-28",
+            "deadline": "2023-12-28",
             "category": "Admin"
           },
           {
@@ -36,7 +36,7 @@
             "isFailed": true,
             "title": "Prepare Client Presentation",
             "description": "Create a detailed presentation for the upcoming client meeting, highlighting project progress and next steps.",
-            "date": "2023-12-30",
+            "deadline": "2023-12-30",
             "category": "Work"
           }
         ],
@@ -61,7 +61,7 @@
             "isFailed": false,
             "title": "Schedule Team Meeting",
             "description": "Coordinate with team members to find a suitable time and schedule the next team meeting on the shared calendar.",
-            "date": "2023-12-31",
+            "deadline": "2023-12-31",
             "category": "Work"
           },
           {
@@ -70,9 +70,9 @@
             "isNewTask": true,
             "isCompleted": false,
             "isFailed": true,
-            "title": "Update Project Roadmap",
-            "description": "Revise the project roadmap based on recent updates and feedback, ensuring it aligns with current goals.",
-            "date": "2024-01-02",
+            "title": "Updeadline Project Roadmap",
+            "description": "Revise the project roadmap based on recent updeadlines and feedback, ensuring it aligns with current goals.",
+            "deadline": "2024-01-02",
             "category": "Planning"
           },
           {
@@ -83,7 +83,7 @@
             "isFailed": false,
             "title": "Plan Team Lunch",
             "description": "Organize a team lunch to improve morale and team bonding, ensuring everyone’s availability.",
-            "date": "2024-01-03",
+            "deadline": "2024-01-03",
             "category": "Social"
           }
         ],
@@ -108,7 +108,7 @@
             "isFailed": false,
             "title": "Review Code Submissions",
             "description": "Analyze recent code submissions for quality and standards, and provide constructive feedback to developers.",
-            "date": "2024-01-04",
+            "deadline": "2024-01-04",
             "category": "Code Review"
           },
           {
@@ -119,7 +119,7 @@
             "isFailed": false,
             "title": "Draft API Documentation",
             "description": "Prepare detailed and easy-to-understand API documentation to assist developers in integrating the API effectively.",
-            "date": "2024-01-05",
+            "deadline": "2024-01-05",
             "category": "Documentation"
           }
         ],
@@ -144,7 +144,7 @@
             "isFailed": false,
             "title": "Set Up Test Environment",
             "description": "Configure the test environment for the upcoming project, ensuring all necessary tools and settings are in place.",
-            "date": "2024-01-06",
+            "deadline": "2024-01-06",
             "category": "Testing"
           },
           {
@@ -155,7 +155,7 @@
             "isFailed": false,
             "title": "Analyze Performance Metrics",
             "description": "Evaluate recent performance metrics and prepare a detailed report with insights and recommendations for improvement.",
-            "date": "2024-01-07",
+            "deadline": "2024-01-07",
             "category": "Analytics"
           }
         ],
@@ -180,7 +180,7 @@
             "isFailed": true,
             "title": "Fix Bugs in Module X",
             "description": "Identify and resolve critical bugs in Module X, ensuring it meets functional and performance requirements.",
-            "date": "2024-01-08",
+            "deadline": "2024-01-08",
             "category": "Bug Fix"
           },
           {
@@ -191,7 +191,7 @@
             "isFailed": false,
             "title": "Research New Library",
             "description": "Conduct an in-depth study of the new library's features and assess its potential for integration into the project.",
-            "date": "2024-01-09",
+            "deadline": "2024-01-09",
             "category": "Research"
           }
         ],

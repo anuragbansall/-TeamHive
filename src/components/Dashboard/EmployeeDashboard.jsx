@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import Header from "./Header";
 import Container from "../Common/Container";
 import TaskTracker from "./TaskTracker";
 import TaskInfo from "./TaskInfo";
 import TaskInfoContainer from "./TaskInfoContainer";
 import TaskTrackerContainer from "./TaskTrackerContainer";
+import { AuthContext } from "../../context/AuthProvider";
 
 function EmployeeDashboard({ handleLogout, userData }) {
-  const { id, email, name, password, tasks, taskCounts } = userData;
-  console.log(tasks[0]);
+  const { authData } = useContext(AuthContext);
+  const { name, id, email, password } = userData;
+  const { taskCounts, tasks } = authData.employees?.find(
+    (emp) => emp.name === name
+  );
+
   return (
     <div className="bg-[#1c1c1c] min-h-screen p-6">
       <Container>
